@@ -9,15 +9,15 @@
   <body>
     <header>
       <nav>
-        <a href="#">
+        <a href="./index.html ">
           <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
         <!-- logo -->
         <ul>
-          <li><a href="#" target="_blank">Наші традиціЇ</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиціЇ</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
       <button type="button">Замовити дзвінок</button>
@@ -26,7 +26,7 @@
       <section>
         <h1>Сучасна пекарня</h1>
       </section>
-      <section>
+      <section id="traditions-section">
         <ul>
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
@@ -45,7 +45,7 @@
         </p>
         <img src="./images/baker-man.jpg" alt="Чоловік пекар з батонами" />
       </section>
-      <section>
+      <section id="chefs-section">
         <h2>Наші найкращі шеф-кухарі</h2>
         <ul>
           <li>
@@ -69,7 +69,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="formats-section">
         <h2>Формати</h2>
         <ul>
           <li>
@@ -89,8 +89,20 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contact-section">
         <h2>Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.599280979616!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e1!3m2!1sru!2sua!4v1751631019453!5m2!1sru!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <a href="https://maps.app.goo.gl/JvaJUnFu5Gn6wnzU6" target="_blank"
+          >Україна, м. Київ, вул. Січових Стрільців 54</a
+        >
       </section>
     </main>
     <footer>
@@ -110,24 +122,24 @@
           <li>
             <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
           </li>
-          <li>
-            <a href="https://maps.app.goo.gl/JvaJUnFu5Gn6wnzU6" target="_blank"
-              >Україна, м. Київ, вул. Січових Стрільців 54</a
-            >
-          </li>
+
           <li>
             <a href="#">
               <!-- facebook icon -->
             </a>
           </li>
           <li>
+            <!-- Не забудь удалить аудио -->
+            <audio controls>
+              <source src="./media/lofi.mp3" />
+            </audio>
             <a href="#">
               <!-- instagram icon -->
             </a>
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
