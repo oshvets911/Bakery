@@ -1,0 +1,67 @@
+:root {
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand-dark: #465929;
+  --color-brand-light: #819b57;
+}
+
+.body {
+  color: var(--color-primary-dark);
+}
+
+.ul {
+  /* Если это относится к конкретному <ul>, возможно, лучше использовать класс */
+  list-style-type: none;
+}
+
+.button {
+  background-color: var(--color-brand-light); /* Используем переменную */
+  border: 2px solid var(--color-brand-light); /* Исправлена лишняя скобка, используем переменную */
+  color: var(--color-primary-light); /* Используем переменную */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.link {
+  color: var(--color-primary-light);
+}
+
+.link:hover {
+  color: var(
+    --color-primary-light
+  ); /* Возможно, вы хотели другой цвет при наведении, сейчас он такой же */
+}
+
+.hero-title {
+  color: var(--color-primary-light); /* Используем переменную */
+}
+
+/* ЭТО ПРАВИЛО БУДЕТ ПЕРЕОПРЕДЕЛЯТЬ .accent ВНУТРИ H1 */
+.hero-title .accent {
+  color: var(
+    --color-brand-light
+  ); /* Используем переменную, если это акцентный цвет */
+}
+
+/* ЭТО ПРАВИЛО БУДЕТ ПРИМЕНЯТЬСЯ КО ВСЕМ ОСТАЛЬНЫМ .accent элементам */
+.accent {
+  color: var(
+    --color-brand-light
+  ); /* Я предполагаю, что акцентный цвет - это --color-brand-light */
+  /* Если вы хотите, чтобы он был --color-primary-light, как было изначально, то: */
+  /* color: var(--color-primary-light); */
+}
+
+.advantages-list {
+  background-color: var(--color-brand-light); /* Используем переменную */
+  color: var(--color-primary-light); /* Используем переменную */
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+}
