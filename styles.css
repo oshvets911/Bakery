@@ -14,12 +14,23 @@
   list-style-type: none;
 }
 
+.logobakery {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.header-link {
+  font-size: 18px;
+  font-weight: 400;
+}
+/* BUTTON */
 .button {
   background-color: var(--color-brand-light); /* Используем переменную */
   border: 2px solid var(--color-brand-light); /* Исправлена лишняя скобка, используем переменную */
   color: var(--color-primary-light); /* Используем переменную */
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -27,6 +38,7 @@
   background-color: transparent;
 }
 
+/* LINK */
 .link {
   color: var(--color-primary-light);
 }
@@ -37,8 +49,11 @@
   ); /* Возможно, вы хотели другой цвет при наведении, сейчас он такой же */
 }
 
+/* Hero section */
 .hero-title {
   color: var(--color-primary-light); /* Используем переменную */
+  font-size: 128px;
+  font-weight: 900;
 }
 
 /* ЭТО ПРАВИЛО БУДЕТ ПЕРЕОПРЕДЕЛЯТЬ .accent ВНУТРИ H1 */
@@ -46,6 +61,8 @@
   color: var(
     --color-brand-light
   ); /* Используем переменную, если это акцентный цвет */
+  font-size: 128px;
+  font-weight: 900;
 }
 
 /* ЭТО ПРАВИЛО БУДЕТ ПРИМЕНЯТЬСЯ КО ВСЕМ ОСТАЛЬНЫМ .accent элементам */
@@ -55,13 +72,95 @@
   ); /* Я предполагаю, что акцентный цвет - это --color-brand-light */
   /* Если вы хотите, чтобы он был --color-primary-light, как было изначально, то: */
   /* color: var(--color-primary-light); */
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .advantages-list {
   background-color: var(--color-brand-light); /* Используем переменную */
   color: var(--color-primary-light); /* Используем переменную */
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .section-title {
   color: var(--color-primary-dark);
+}
+
+/* Traditions */
+.traditions-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+}
+
+.traditions-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.traditions-text-span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Chefs */
+.names {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.descriptions {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.section-title .accent {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+/* FORMATS */
+.formats {
+  font-size: 64px;
+  font-weight: 900;
+}
+.format-item-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+}
+
+.join-us {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.fill-form {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-brand-dark);
+}
+
+.basement {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primary-light);
+}
+
+.basement-copy {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a18268;
 }

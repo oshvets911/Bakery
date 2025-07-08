@@ -11,12 +11,16 @@
     <header>
       <nav>
         <a href="./index.html ">
-          <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+          <img
+            class="logobakery"
+            src="./images/logo.svg"
+            alt="Логотип сучасної пекарні"
+          />
         </a>
         <!-- logo -->
         <ul>
           <li>
-            <a class="header-link" href="#traditions-section">Наші традиціЇ</a>
+            <a class="header-link" href="#traditions-section">Наші традиції</a>
           </li>
           <li><a class="header-link" href="#chefs-section">Шеф-кухарі</a></li>
           <li><a class="header-link" href="#formats-section">Формати</a></li>
@@ -37,12 +41,12 @@
         </ul>
 
         <h2 class="traditions-title">Новий формат традицій</h2>
-        <p>
-          <span class="accent">shop bakery</span> — це пекарня, яка взяла все
+        <p class="traditions-text">
+          <span class="accent">SHOP BAKERY</span> — це пекарня, яка взяла все
           найкраще, і зберегла смак традиційної випічки та натуральність
           інгредієнтів.
         </p>
-        <p>
+        <p class="traditions-text">
           Ми працюємо як найвідоміші мережі —
           <span class="accent">5 хвилин і замовлення готове.</span>
           А ще у наших пекарень стильний дизайн та висока якість обслуговування!
@@ -56,16 +60,16 @@
         <ul>
           <li>
             <article>
-              <h3>Настя</h3>
-              <p>Привіт, я Настя!</p>
+              <h3 class="names">Настя</h3>
+              <p class="description">Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
               <p>Я випічу для вас найсмачніщі вироби!</p>
             </article>
           </li>
           <li>
             <article>
-              <h3>Влад</h3>
-              <p>Привіт, я Влад!</p>
+              <h3 class="names">Влад</h3>
+              <p class="description">Привіт, я Влад!</p>
               <p>
                 Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов,
                 з якою ми ділимось кожен раз з Вами через нашу випічку!
@@ -76,27 +80,28 @@
         </ul>
       </section>
       <section id="formats-section">
-        <h2>Формати</h2>
+        <h2 class="formats">Формати</h2>
         <ul>
           <li>
             <article>
-              <h3 lang="en">Walrus</h3>
+              <h3 class="format-item-name" lang="en">Walrus</h3>
             </article>
           </li>
           <li>
             <article>
-              <h3 lang="en">Horseshoe</h3>
+              <h3 class="format-item-name" lang="en">Horseshoe</h3>
             </article>
           </li>
           <li>
             <article>
-              <h3 lang="en">Handlebar</h3>
+              <h3 class="format-item-name" lang="en">Handlebar</h3>
             </article>
           </li>
         </ul>
       </section>
       <section id="contact-section">
-        <h2>Приєднуйся до мережі пекарень</h2>
+        <h2 class="join-us">Приєднуйся до мережі пекарень</h2>
+        <p class="fill-form">Заповни форму, щоб ми звʼязались з тобою!</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.599280979616!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e1!3m2!1sru!2sua!4v1751631019453!5m2!1sru!2sua"
           width="600"
@@ -116,17 +121,25 @@
       <nav>
         <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         <ul>
-          <li><a href="#" target="_blank">Наші традиціЇ</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li>
+            <a class="basement" href="#" target="_blank">Наші традиціЇ</a>
+          </li>
+          <li><a class="basement" href="#">Шеф-кухарі</a></li>
+          <li><a class="basement" href="#">Формати</a></li>
+          <li><a class="basement" href="#">Контакти</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="basement-copy" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
+          </li>
+          <li>
+            <a class="basement-copy" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
           </li>
 
           <li>
@@ -144,8 +157,10 @@
             </a>
           </li>
         </ul>
-        <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>&copy; 2022 Дані захищені</p>
+        <a class="basement-copy" href="#" target="_blank"
+          >Політика конфіденційності</a
+        >
+        <p class="copyright">&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
