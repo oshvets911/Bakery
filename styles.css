@@ -172,6 +172,10 @@ ul {
   display: flex;
 }
 
+.trad-spin {
+  display: flex;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
