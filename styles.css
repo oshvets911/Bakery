@@ -17,6 +17,11 @@
 .body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
 }
 
 h1,
@@ -34,9 +39,8 @@ a {
 }
 
 ul {
-  /* Если это относится к конкретному <ul>, возможно, лучше использовать класс */
   list-style-type: none;
-  margin: 0;
+
   padding: 0;
 }
 
@@ -61,6 +65,10 @@ ul {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: 238px;
+  height: 59px;
 }
 
 .button:hover {
@@ -112,9 +120,8 @@ ul {
   display: flex;
   align-items: center;
   gap: 40px;
-  /* background-color: #e2e2e2; */
-  /* /remove color*  */
 }
+
 .header-nav {
   display: flex;
   flex-grow: 1;
@@ -208,6 +215,10 @@ ul {
   padding: 48px;
 }
 
+.man-baton {
+  border-radius: 400px 400px 0 0;
+}
+
 .traditions-section {
   padding-top: 96px;
 }
@@ -241,13 +252,12 @@ ul {
   font-weight: 600;
 }
 
-/* Chefs  Изменить потом из документа на рабочем сттоле хтмл и ссс */
+/* Chefs */
 .chefs-title {
   position: relative;
-  /* max-width: 520px; */ /* Заберіть або змініть на менший, щоб заголовок був на одному рядку як на фото */
-  margin: 0 auto 80px; /* Центруємо заголовок і додаємо відступ знизу */
-  text-align: center; /* Забезпечуємо центрування тексту */
-  line-height: 1.2; /* Зменшуємо міжрядковий інтервал для кращого вигляду */
+  margin: 0 auto 82px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .chefs-title .accent {
@@ -270,21 +280,16 @@ ul {
 /* --- Горизонтальні лінії навколо заголовка --- */
 .chefs-title::before,
 .chefs-title::after {
-  display: inline-block; /* Щоб вони були в одному рядку з текстом */
-  vertical-align: middle; /* Вирівняти по середині тексту */
-  width: 100px; /* Ширина лінії, можна налаштувати */
-  height: 2px; /* Товщина лінії */
-  background-color: var(--color-brand-normal); /* Колір лінії */
-  content: ''; /* Обов'язково для псевдоелементів */
-  margin: 0 16px; /* Відступ від тексту */
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-brand-normal);
+  content: '';
+  margin: 0 16px;
 }
 
 /* --- Секція шеф-кухарів --- */
-
-/* .chef-title {
-  max-width: 520px;
-  margin: 0 auto 80px;
-} */
 
 .chef-title.centered {
   max-width: 520px;
@@ -292,35 +297,45 @@ ul {
 }
 
 .chef-title::before .chefs-title::after {
-  display: block;
+  border: 2px solid var(--color-brand-secondary-dark);
+  width: 352px;
+  height: 0px;
+}
+/* display: block;
   width: 352px;
   border: 2px solid #cfcfbc;
   content: '';
-}
+} */
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 white,
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-brand-secondary-dark);
   background-color: var(--color-primary-light);
+  width: 241px;
+  height: 390px;
 }
 
 .chefs-list {
   display: flex;
   gap: 80px;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .chefs-card {
   display: flex;
   gap: 30px;
+  height: 100%;
 }
 
-.chefs-text p:not(:last-child) {
+.chefs-text {
   margin-bottom: 24px;
 }
 
 .chefs-item {
-  flex-basis: calc((100% - 30px) / 2);
+  flex: 1;
+  display: flex;
 }
 
 .names {
@@ -334,11 +349,6 @@ ul {
   font-weight: 400;
 }
 
-.section-title {
-  font-size: 64px;
-  font-weight: 900;
-}
-
 .section-title .accent {
   font-size: 64px;
   font-weight: 900;
@@ -346,6 +356,7 @@ ul {
 
 .chef-title {
   margin-bottom: 80px;
+  flex-grow: 1;
 }
 /* FORMATS */
 
@@ -577,6 +588,7 @@ ul {
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  padding: 128px;
 }
 
 .modal.is-hidden {
@@ -587,4 +599,73 @@ ul {
   position: absolute;
   top: 40px;
   right: 40px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-image: url(./images/button-close.svg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* FORM */
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--color-brand-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-label {
+  display: block;
+  overflow-y: auto;
+  top: 16px;
+  left: 42px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.form-input:focus {
+  border: 1px solid var(--color-brand-light);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-brand-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}
+
+.form-bread {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
