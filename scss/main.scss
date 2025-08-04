@@ -146,7 +146,7 @@ ul {
       rgba(18, 18, 17, 0.6) 63.89%,
       rgba(18, 18, 17, 0) 100%
     ),
-    url(./images/hero-section-background.jpg);
+    url(../images/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -429,7 +429,7 @@ ul {
       rgba(49, 38, 26, 0.71) 72.92%,
       #31261a 100%
     ),
-    url(./images/walrus.jpg);
+    url(../images/walrus.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -442,7 +442,7 @@ ul {
       rgba(49, 38, 26, 0.71) 72.92%,
       #31261a 100%
     ),
-    url(./images/horseshoe.jpg);
+    url(../images/horseshoe.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -455,7 +455,7 @@ ul {
       rgba(49, 38, 26, 0.71) 72.92%,
       #31261a 100%
     ),
-    url(./images/handlebar.jpg);
+    url(../images/handlebar.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -546,7 +546,7 @@ ul {
 
 .footer {
   position: relative;
-  background-image: url(./images/footer-background.jpg);
+  background-image: url(../images/footer-background.jpg);
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
@@ -565,14 +565,14 @@ ul {
   width: 180px;
   height: 120px;
   left: 0;
-  background-image: url(./images/decor-bread-small.png);
+  background-image: url(../images/decor-bread-small.png);
 }
 
 .footer::after {
   width: 380px;
   height: 190px;
   right: 0;
-  background-image: url(./images/decor-bread-large.png);
+  background-image: url(../images/decor-bread-large.png);
 }
 
 .footer-container {
@@ -664,7 +664,7 @@ adre .adress-icon {
   width: 32px;
   height: 32px;
   padding: 0;
-  background-image: url(./images/button-close.svg);
+  background-image: url(../images/button-close.svg);
   background-color: transparent;
   border: none;
   cursor: pointer;

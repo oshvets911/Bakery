@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body class="body">
     <!-- HEADER -->
@@ -134,9 +134,9 @@
                   <div class="chefs-text">
                     <p>Привіт, я Влад!</p>
                     <p>
-                      Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                      любов, з якою ми ділимось кожен раз з Вами через нашу
-                      випічку!
+                      Мій кодитерський стаж вже 18 років. <br />
+                      SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз
+                      з Вами через нашу випічку!
                     </p>
                     <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
                   </div>
@@ -151,7 +151,7 @@
 
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="format-title section-title centered">Формати</h2>
+          <h2 class="format-title-main section-title centered">Формати</h2>
           <div class="formats-container">
             <button class="carousel-button" type="button">
               <svg class="carousel-icon" width="44" height="44">
@@ -160,7 +160,7 @@
             </button>
             <ul class="formats-list">
               <li class="formats-item">
-                <article class="format-card">
+                <article class="format-card walrus">
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -174,7 +174,7 @@
                 </article>
               </li>
               <li class="formats-item">
-                <article class="format-card">
+                <article class="format-card horseshoe">
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -185,7 +185,7 @@
                 </article>
               </li>
               <li class="formats-item">
-                <article class="format-card">
+                <article class="format-card handlebar">
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -203,6 +203,9 @@
             </button>
           </div>
         </div>
+        <svg class="nav-dots">
+          <use href="./images/navigation-dots.svg"></use>
+        </svg>
       </section>
       <!-- Contacts -->
       <section class="contact-title" id="contact-section">
@@ -211,8 +214,8 @@
             <div class="contact-form">
               <h2 class="join-us">Приєднуйся до мережі пекарень</h2>
               <p class="fill-form">Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form name="contact-form" autocomplete="off" novalidate>
-                <legend>Контактна інформація</legend>
+              <form name="contact-form" autocomplete="off">
+                <!-- <legend>Контактна інформація</legend> -->
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ім'я</label
@@ -223,6 +226,9 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ім'я"
+                    required
+                    minlength="2"
+                    maxlength="20"
                   />
                 </div>
                 <div class="form-field">
@@ -234,7 +240,9 @@
                     type="tel"
                     name="user-tel"
                     id="user-tel"
-                    placeholder="Телефон"
+                    placeholder="+380"
+                    required
+                    pattern="^\+[0-9]{12}"
                   />
                 </div>
                 <div class="form-field">
@@ -246,7 +254,8 @@
                     type="email"
                     name="user-email"
                     id="user-email"
-                    placeholder="Електронна пошта"
+                    placeholder="example@example.com"
+                    required
                   />
                 </div>
                 <button class="button form-button" type="submit">
@@ -271,12 +280,6 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <a
-              class="adress-link"
-              href="https://maps.app.goo.gl/JvaJUnFu5Gn6wnzU6"
-              target="_blank"
-              >Україна, м. Київ, вул. Січових Стрільців 54</a
-            >
           </div>
         </div>
       </section>
@@ -316,6 +319,12 @@
                 <a class="adress-link" href="mailto:shopbakery@gmail.com"
                   >shopbakery@gmail.com</a
                 >
+                <a
+                  class="adress-link"
+                  href="https://maps.app.goo.gl/JvaJUnFu5Gn6wnzU6"
+                  target="_blank"
+                  >Україна, м. Київ, вул. Січових Стрільців 54</a
+                >
               </li>
               <li>
                 <a href="#">
@@ -334,10 +343,12 @@
                 <!-- Instagram icon -->
               </li>
             </ul>
-            <a class="adress-link" href="#" target="_blank"
-              >Політика конфіденційності</a
-            >
-            <p class="copyright">&copy; 2022 Дані захищені</p>
+            <ul>
+              <a class="adress-link" href="#" target="_blank"
+                >Політика конфіденційності
+                <p class="copyright">&copy; 2022 Дані захищені</p></a
+              >
+            </ul>
           </address>
         </div>
       </div>
@@ -347,7 +358,7 @@
         <button class="button modal-btn-close" type="button"></button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <legend>Контактна інформація</legend>
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
@@ -359,6 +370,9 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              required
+              minlength="2"
+              maxlength="20"
             />
           </div>
           <div class="form-field">
@@ -371,6 +385,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              required
+              pattern="^\+[0-9]{12}"
             />
           </div>
           <div class="form-field">
@@ -383,8 +399,13 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
+          <input type="checkbox" id="terms-coditions" name="terms-coditions" />
+          <label for="terms-coditions"
+            >Я точно погоджуюсь з політикою конфіденційності</label
+          >
           <button class="button form-button" type="submit">
             Замовити дзвінок
           </button>
